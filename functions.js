@@ -68,7 +68,7 @@ function timerFromFor(a, b) {
 
 timerFromFor(4, 7);
 
-//возведение в степень
+//возведение числа в степень
 const exp = (a, b) => {
   return Math.pow(a, b);
 };
