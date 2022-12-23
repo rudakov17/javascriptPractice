@@ -46,6 +46,3 @@ console.log(hasThisKey('allo', obj1));
 //задание 3
 const emptyObj = Object.create(null);
 console.log(emptyObj);
-
-const emptyObj2 = {};
-console.log(emptyObj2);

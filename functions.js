@@ -54,7 +54,7 @@ const secondFunc = firstFunc(5);
 const sumBoth = secondFunc(7);
 console.log(sumBoth);
 
-//таймер от и до
+// таймер от и до
 function timerFromFor(a, b) {
   let timing = setInterval(() => {
     console.log(a);
