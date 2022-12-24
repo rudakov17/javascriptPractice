@@ -9,6 +9,7 @@ function Devices(device, power) {
   this.onOff = function (switcher) {
     if (switcher === true) {
       this.condition = false;
+      this.getPower();
     } else {
       this.condition = true;
       this.getPower();
@@ -18,6 +19,8 @@ function Devices(device, power) {
   this.getPower = function () {
     if (this.condition === true) {
       totalPower += this.power;
+    } else {
+      totalPower = totalPower - this.power;
     }
   };
 }
@@ -41,4 +44,5 @@ const off = true;
 
 computer.onOff(on);
 tv.onOff(on);
+computer.onOff(off);
 console.log(totalPower);
